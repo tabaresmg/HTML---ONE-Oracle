@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<body style="background-color: rgb(85, 85, 85);">
+
+<h1><big>PROGRAMA PARA CALCULAR LOS NÚMEROS PARES</big></h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var contador=1;
+
+    while (contador<=100) {
+        if (contador%2== 0) {
+            imprimir(contador);
+        }
+        contador++
+    }
+
+</script>

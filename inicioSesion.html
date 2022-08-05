@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+<body style="background-color: rgb(85, 85, 85);">
+
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    var contador=1;
+    var intentos=0;
+
+    var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+    var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+    while (intentos<=3){
+        
+        if (inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        } 
+        else {
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+            intentos++;
+            if (intentos>=3) {
+                imprimir("usuario bloqueado.")
+                break;
+            }
+        }   
+        inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        contrasenhaIngresada = prompt("Ingrese su contraseña");
+    
+    }    
+
+    
+    
+
+</script>

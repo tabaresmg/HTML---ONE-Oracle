@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<body style="background-color: rgb(85, 85, 85);">
+
+<h1><big>PROGRAMA PARA CALCULAR LAS TABLAS DE MULTIPLICAR</big></h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+
+    var multiplicador =1
+
+    imprimir("WHILE")
+    while (multiplicador<=10) {
+        imprimir(5*multiplicador);
+        multiplicador++;
+    }
+
+    imprimir("FOR")
+    for (var multiplicador =1;multiplicador<=10;multiplicador++){
+        imprimir(5*multiplicador)
+    }
+
+</script>
+
